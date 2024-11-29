@@ -52,7 +52,7 @@ right = left + new_width
 bottom = height
 image3 = green.crop((left, top, right, bottom))
 
-new_image = Image.merge("RGB", (image1, image2, image3))
+new_image = Image.merge("RGB", (image1, image3, image2))
 
 new_image.thumbnail ((80, 80))
 new_image.save("smileface.jpg")
